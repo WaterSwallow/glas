@@ -1,0 +1,14 @@
+{
+	"scripts": {
+		"build": "asc ./index.ts -b index.wasm --noUnsafe --sourceMap --debug",
+		"prestart": "npm run build",
+		"start": "five-server ./"
+	},
+	"dependencies": {
+		"glas": "file:../../"
+	},
+	"devDependencies": {
+		"assemblyscript": "0.18.8",
+		"five-server": "^0.3.1"
+	}
+}
