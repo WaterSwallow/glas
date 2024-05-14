@@ -48,12 +48,12 @@ export async function run(options: RunOptions) {
 	})
 
 	const end = performance.now()
-	
+	console.log('Module load time:', end - start)
 
 	const start2 = performance.now()
 
 	main()
 
 	const end2 = performance.now()
-	
+	console.log('Module run time:', end2 - start2)
 }
